@@ -1,0 +1,8 @@
+# Append existing file with.....
+
+rest_command:
+  update_route53:
+    url: !secret ddns_lambda_url
+    method: get
+    headers:
+      Authorization: !secret ddns_bearer
