@@ -1,1 +1,17 @@
+- id: 'r53automation'
+  alias: Update Route53 on public IP change
+  triggers:
+  - entity_id: sensor.myip
+    trigger: state
+  - event: start
+    trigger: homeassistant
+  conditions:
+  - condition: template
+    value_template: '{{ states(''sensor.myip'') not in [''unknown'', ''unavailable'']
+      }}
 
+      '
+  actions:
+  - action: rest_command.update_route53
+    data: {}
+    response_variable: r53response
