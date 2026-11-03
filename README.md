@@ -10,8 +10,11 @@ I assume by this point, you have a Route 53 registered domain name and can creat
 Once you are able to see your IP address, create a Python Lambda function (see lambda_function.py) and create environment variables with the following:
 
 RECORD:  vpn.exampledomainname.co.uk
-ZONE_ID:  (taken from Route 53}
+
+ZONE_ID:  {taken from Route 53}
+
 TOKEN:  {Generate an authorisation token and save it somewhere safe}
+
 
 Create a Function URL with auth type 'NONE'.  
 
