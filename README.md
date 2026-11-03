@@ -17,6 +17,6 @@ Create a Function URL with auth type 'NONE'.
 
 Add the changes to secrets.yaml, configurations.yaml and automations.yaml as per the files in this GitHub repo...
 
-That should be sufficient to work.  Validate this from Home Assistant by running at the automation traces log and seeing the correct IP address (and then of course, running an nslookup on your VPN address)
+That should be sufficient to work.  Validate this from Home Assistant by running at the automation traces log and seeing the correct IP address under 'Changed Variables' (and then of course, running an nslookup on your VPN address)
 
 <img width="820" height="484" alt="image" src="https://github.com/user-attachments/assets/b8c02f74-f285-45f8-9eed-52b16e71116f" />
