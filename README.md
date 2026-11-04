@@ -41,7 +41,7 @@ You can check the Lambda function has the rights based on your changes:
 <img width="1607" height="472" alt="image" src="https://github.com/user-attachments/assets/b5c84d47-b78d-44c9-84bf-80a3bbaa80d6" />
 
 
-Now, from Home Assistant, add the changes to secrets.yaml, configurations.yaml and automations.yaml as per the files in this GitHub repo...
+Now, from Home Assistant, add the changes to secrets.yaml, configurations.yaml and automations.yaml as per the files in this GitHub repo...  At this point, give HA a restart.
 
 That should be sufficient to work.  Validate this from Home Assistant by running at the automation traces log and seeing the correct IP address under 'Changed Variables' (and then of course, running an nslookup on your VPN address)
 
